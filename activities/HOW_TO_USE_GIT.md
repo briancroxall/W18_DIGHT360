@@ -78,5 +78,5 @@ This attempts to merge your local changes (if there are any) with changes that
 have been pushed to the server by other contributors.
 
 I strongly recommend that you never change any of the files in the repository.
-First make a copy of the file, then do whatever you want with the COPIED file.
+First make a copy of the file (`cp <old_file> <new_file>`), then do whatever you want with the COPIED file.
 
