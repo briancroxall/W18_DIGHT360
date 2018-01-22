@@ -89,16 +89,17 @@ print('=' * 79)
 # Quotation from python documents:
 
 # Regular expressions use the backslash character ('\') to indicate special
-# forms or to allow special characters to be used without invoking their special
-# meaning. This collides with Python’s usage of the same character for the same
-# purpose in string literals; for example, to match a literal backslash, one
-# might have to write '\\\\' as the pattern string, because the regular
-# expression must be \\, and each backslash must be expressed as \\ inside a
-# regular Python string literal.
-# The solution is to use Python’s raw string notation for regular expression
-# patterns; backslashes are not handled in any special way in a string literal
+# forms or to allow special characters to be used without invoking their
+# special meaning. This collides with Python’s usage of the same character for
+# the same purpose in string literals; for example, for a regular expression to
+# match a literal backslash, one might have to write '\\\\' as the pattern
+# string, because the regular expression must be \\, and each backslash must be
+# expressed as \\ inside a regular Python string literal.  To sidestep
+# "backslash hell" use Python’s raw string notation for regular expression
+# patterns: backslashes are not handled in any special way in a string literal
 # prefixed with 'r'.... Usually patterns will be expressed in Python code using
-# this raw string notation.
+# this raw string notation. The python interpreter treats r'/t' and '\\t' as
+# equivalent expressions.
 
 import re
 test_str = 'I would like spam, ham, and eggs.'
