@@ -15,7 +15,7 @@
 #     collections - useful variations on dicts, for example
 #     pprint - print objects prettily (with readable indentations)
 #     math
-#     random - random number generation and random sampling
+#     random - pseudo random number generation and random sampling
 #     statistics
 #     os - interact with operating system (filesystem)
 #     pickle - object serialization
